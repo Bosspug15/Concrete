@@ -5894,37 +5894,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db544aa4745bade4681b2c8e533e763b, type: 3}
   m_PrefabInstance: {fileID: 195489346}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &200343175
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 200343176}
-  m_Layer: 0
-  m_Name: it also makes the wind make sense
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &200343176
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 200343175}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.158787, y: 12.252058, z: 235.38289}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &209674747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46401,37 +46370,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d62a441e87f26534789a376cf1becc08, type: 3}
   m_PrefabInstance: {fileID: 1491415158}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1492082320
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1492082321}
-  m_Layer: 0
-  m_Name: Add shadergraph for waving wires
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1492082321
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1492082320}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.02274, y: -106.48465, z: 314.53058}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1495050888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67640,8 +67578,6 @@ SceneRoots:
   - {fileID: 1557354575}
   - {fileID: 819076550}
   - {fileID: 6349146521560901168}
-  - {fileID: 1492082321}
-  - {fileID: 200343176}
   - {fileID: 866736840}
   - {fileID: 1278548951}
   - {fileID: 1701010309}
