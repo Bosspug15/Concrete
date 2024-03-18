@@ -10,6 +10,7 @@ public class ConcretePlayerMovement : MonoBehaviour
     [SerializeField] public float speed = 12f;
     [SerializeField] public float jumpHeight = 3f;
     public float gravity = -9.81f;
+    public AudioSource footstepsSound;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -44,6 +45,23 @@ public class ConcretePlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded) 
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
+
+
+        /*
+        if (!isGrounded)
+        {
+            footstepsSound.enabled = false;
+        }
+        */
+
+        if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && isGrounded)
+        {
+            footstepsSound.enabled = true;
+        }
+        else {
+
+            footstepsSound.enabled = false;
         }
 
         velocity.y += gravity * Time.deltaTime;
