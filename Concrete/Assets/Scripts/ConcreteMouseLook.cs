@@ -6,19 +6,16 @@ public class ConcreteMouseLook : MonoBehaviour
 {
 
     [SerializeField] public float mouseSensitivity = 100f;
-
+    
     public Transform playerBody;
 
     float xRotation = 0f;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float mouseX = Input.GetAxisRaw("Mouse X") * mouseSensitivity;
