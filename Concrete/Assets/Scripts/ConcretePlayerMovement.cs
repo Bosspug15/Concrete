@@ -5,27 +5,22 @@ using UnityEngine;
 public class ConcretePlayerMovement : MonoBehaviour
 {
 
-    public CharacterController controller;
-
+    [Header("Movement Settings")]
     [SerializeField] public float speed = 12f;
     [SerializeField] public float jumpHeight = 3f;
     public float gravity = -9.81f;
-    public AudioSource footstepsSound;
+
+    Vector3 velocity;
+    bool isGrounded;
+
+    public CharacterController controller;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
 
-    Vector3 velocity;
-    bool isGrounded;
+    public AudioSource footstepsSound;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -46,14 +41,6 @@ public class ConcretePlayerMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
-
-
-        /*
-        if (!isGrounded)
-        {
-            footstepsSound.enabled = false;
-        }
-        */
 
         if ((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)) && isGrounded)
         {
