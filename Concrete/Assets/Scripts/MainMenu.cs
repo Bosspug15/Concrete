@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public Animator transition;
     [SerializeField] public float transitionTime = 1f;
+    
     public void PlayGame() 
     {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
